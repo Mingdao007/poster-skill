@@ -63,8 +63,17 @@ Rules:
 - Treat the current `.pptx` poster as the only baseline for edit decisions.
 - If the current `.pptx`, an older export, and an authoring source disagree, follow the current `.pptx` for visual truth.
 
-Read [poster-rules.md](./references/poster-rules.md) first.
-Use local project examples only when the current poster workspace already provides them.
+When the user mentions ELC6011, Session 9, A1, portrait printing, or course poster materials, read:
+
+- [poster-rules.md](./references/poster-rules.md)
+- [elc6011-worked-example.md](./references/elc6011-worked-example.md)
+
+When the user is iterating a current research poster, a user-handedited `.pptx`, or ME6603 poster work, also read:
+
+- [poster-rules.md](./references/poster-rules.md)
+- [me6603-worked-example.md](./references/me6603-worked-example.md)
+
+Otherwise, start with [poster-rules.md](./references/poster-rules.md) only.
 
 ## Workflow
 
@@ -133,9 +142,9 @@ Primary review findings should focus on:
 
 Use the minimum underlying skill that fits the task:
 
-- Use [$slides]($CODEX_HOME/skills/slides/SKILL.md) for normal authoring, substantial layout edits, and editable `.pptx` generation.
-- Use [$pptx]($HOME/.local/share/skills/pptx/SKILL.md) when the task is raw template preservation, XML unpacking, or low-level `.pptx` inspection.
-- Use [$pdf]($CODEX_HOME/skills/pdf/SKILL.md) for rendered-page inspection and final PDF review.
+- Use [$pptx](/Users/andyl/.shared_ai_skills/skills/pptx/SKILL.md) for normal authoring, substantial layout edits, editable `.pptx` generation, raw template preservation, XML unpacking, or low-level `.pptx` inspection.
+- Use [$pdf](/Users/andyl/.codex/skills/pdf/SKILL.md) for rendered-page inspection and final PDF review.
+- Use [$visual-deliverable-check](/Users/andyl/.codex/skills/visual-deliverable-check/SKILL.md) as the default final visual gate before reporting a poster as ready.
 
 PowerPoint export rules:
 
@@ -148,6 +157,7 @@ PowerPoint export rules:
 Before handing off a poster, confirm all of the following:
 
 - `.pptx` is the latest source of truth
+- the current poster passed `visual-deliverable-check`
 - user-locked copy has not been rewritten without permission
 - large blank areas and local congestion have been reviewed together
 - headings and figures pass the `30-second scan`
