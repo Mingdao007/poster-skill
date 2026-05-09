@@ -165,3 +165,11 @@ Before handing off a poster, confirm all of the following:
 - figures and captions carry the argument without requiring paragraph reading
 - no obvious text wall, distraction image, dark-background default, or misaligned text edge remains
 - official `.pdf` status is explicit: synced natively, intentionally absent, or still stale
+
+
+## Validation And Checkpoints
+
+- Before final handoff, validate the requested artifact or decision against this skill's output contract and report the verification result explicitly.
+- Before any local mutation, pass the recoverability gate: create a rollback point when the change is reversible, and request confirmation when backup cannot cover the risk.
+- Use an explicit checkpoint when required input is missing, tool evidence conflicts, or repeated attempts fail; wait for approval or route to the named owner instead of guessing.
+- For multi-session work, update a progress or HANDOFF artifact with current state, verified result, and next executable step.
