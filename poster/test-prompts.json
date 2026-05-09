@@ -1,0 +1,17 @@
+[
+  {
+    "name": "happy-path-routing",
+    "prompt": "Use `poster` for this documented task: academic poster authoring.",
+    "expected": "Triggers `poster`, follows its SKILL.md workflow, and returns the documented output shape without inventing unrelated scope."
+  },
+  {
+    "name": "non-trigger-boundary",
+    "prompt": "This is unrelated to `poster`: explain a generic Python syntax error in a toy snippet.",
+    "expected": "Does not trigger `poster` and routes to the ordinary coding or explanation path instead."
+  },
+  {
+    "name": "owner-overlap-routing",
+    "prompt": "The request partially overlaps `poster` and an adjacent owner workflow; decide which owner should handle it before acting.",
+    "expected": "Checks owner boundaries first, uses `poster` only for its documented surface, and routes adjacent work to the better owner when needed."
+  }
+]
