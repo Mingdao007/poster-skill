@@ -142,9 +142,12 @@ Primary review findings should focus on:
 
 Use the minimum underlying skill that fits the task:
 
-- Use [$pptx](/Users/andyl/.shared_ai_skills/skills/pptx/SKILL.md) for normal authoring, substantial layout edits, editable `.pptx` generation, raw template preservation, XML unpacking, or low-level `.pptx` inspection.
-- Use [$pdf](/Users/andyl/.codex/skills/pdf/SKILL.md) for rendered-page inspection and final PDF review.
-- Use [$visual-deliverable-check](/Users/andyl/.codex/skills/visual-deliverable-check/SKILL.md) as the default final visual gate before reporting a poster as ready.
+- Use `$pptx` for normal authoring, substantial layout edits, editable `.pptx`
+  generation, raw template preservation, XML unpacking, or low-level `.pptx`
+  inspection.
+- Use `$pdf` for rendered-page inspection and final PDF review.
+- Use `$visual-deliverable-check` as the default final visual gate before
+  reporting a poster as ready.
 
 PowerPoint export rules:
 
